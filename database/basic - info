@@ -1,0 +1,93 @@
+/*
+Hi Hello Welcome
+this is the part1 of creating the 'DB'
+Here i have been inserted the required datails of every student 
+ex:- name,branch,section,course,mobile,place etc. //these are the columns for our details table
+
+  */
+INSERT INTO details(name)
+
+VALUES
+    ('MARRI V VEERA MANI DURGA PRAKASH'),
+    ('MOGAL KALESHA VALI'),
+    ('MUDAVARTHI NAGARAJU'),
+    ('MUPPAVARAPU BRAHMATEJA'),
+    ('NAKKA DANAMURTHY'),
+    ('NUTHALAPATI AJAY'),
+    ('PAKALAPATI SHALANA'),
+    ('PALLA PRADEEP KUMAR'),
+    ('PALURI MALLIKARJUNA RAO'),
+    ('PAMULAPATI VENKATA SAI'),
+    ('PANDITI KENINNYA'),
+    ('PAPASANI SAI ADITHYA'),
+    ('PARIMI VENKATA GANESH'),
+    ('PATAN AKHIL'),
+    ('PAVULURI GANESH KUMAR'),
+    ('PAVULURI JEEVAN SIDDU'),
+    ('PERUGU CHANDU'),
+    ('PIGILI MANIKANTA'),
+    ('POLLA VENKATA RAVITEJA'),
+    ('SHAIK KAREEMULLA'),
+    ('MADALA RAKESH KUMAR'),
+    ('MANOJ KUMAR THANNEERU'),
+    ('SHAIK ADISH KARIMULLA'),
+    ('KESAVARAPU SINDHUJA'),
+    ('KONAKALA SURENDRA'),
+    ('PULI LAKSHMI JYOTHI'),
+    ('MARELLA AJAY'),
+    ('KOMMARANENI HARSHA VARDHAN'),
+    ('OGIRALA INDHU'),
+    ('KADIYAM RAMU'),
+    ('MANDA SUNNY'),
+    ('KANUMURI RAJITHA KUMARI'),
+    ('MIRIYALA SIVA VENKATA SAI KRISHNA'),
+    ('KURAKULA JAGADISH'),
+    ('KONDRU ANIL BABU'),
+    ('KOTHA RAVINDRA REDDY'),
+    ('KASUKURTHI MARK'),
+    ('MEKALA KOKILA'),
+    ('SHAIK SHAKEEL AHAMMAD'),
+    ('CHAVA KAVYA'),
+    ('DUDDEKUNTA SRI SAI VARSHINI'),
+    ('GATTAMANENI MANISHA'),
+    ('MATTA LAKSHMI DURGA'),
+    ('PATIBANDLA NAGA LAKSHMI'),
+    ('PEEKA HARIKA'),
+    ('PITCHALA AMULYA'),
+    ('POKURI VENKATA SRAVANI'),
+    ('POLISETTI SRI JYOTHI'),
+    ('POPURI KEERTHI'),
+    ('PULI AKHILA'),
+    ('RAVELLA MRUDULA'),
+    ('SHAIK ARSHEYA'),
+    ('SHAIK KELLAMPALLI JUBEDA'),
+    ('SHAIK MEERA SHAHEEL'),
+    ('SHEELAM VENKATA LALITHESWARI DEVI'),
+    ('ACHALA MANOHAR REDDY'),
+    ('SHAIK MASTAN VALI'),
+    ('SHAIK MUHAMMAD SIDDIQ HYDER BASHA'),
+    ('SHAIK NAZEER'),
+    ('SIRIGIRI SRIKANTH'),
+    ('SODDALA VENKATA RAM'),
+    ('SOMISETTY VENKATA VEERA ANJA JASWANTH'),
+    ('SUDIDELA BRAHMENDRA REDDY'),
+    ('SUNDARASETTY BALAJI ROHITH'),
+    ('SWARNA RAMAKISHORE'),
+    ('TALAKOLA BABI');
+
+    next for using UPDATE method
+    UPDATE details
+SET mobile = CASE Sno
+             WHEN  1 THEN -mobile-
+             WHEN  2 THEN -mobile-
+               |       |      |      
+               |       |      |
+               |       |      |
+               |       |      |
+               |       |      |
+               |       |      |
+   
+END 
+    WHERE Sno BETWEEN 1 AND -required-;
+
+    same as number update all other feilds branch,section,course,place etc.
