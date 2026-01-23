@@ -1,0 +1,88 @@
+// today i have created the tables are classroom and timetable it consists of the rooms of the class and the real time class periods
+now i have done insertion now updating new values, 
+==> these consists of periods and days
+
+UPDATE timetable
+SET room_no = CASE
+WHEN day = 'monday' AND period_no = 1 THEN 'Online'
+WHEN day = 'monday' AND period_no = 2 THEN 'Online'
+WHEN day = 'monday' AND period_no = 3 THEN 'Online'
+WHEN day = 'monday' AND period_no = 4 THEN 'Online'
+WHEN day = 'monday' AND period_no = 5 THEN 'Online'
+WHEN day = 'monday' AND period_no = 6 THEN 'Online'
+WHEN day = 'monday' AND period_no = 7 THEN 'Online'
+WHEN day = 'monday' AND period_no = 8 THEN 'Online'
+END
+WHERE day = 'monday';
+
+
+UPDATE timetable
+SET room_no = CASE
+WHEN day = 'tuesday' AND period_no = 1 THEN 'G101'
+WHEN day = 'tuesday' AND period_no = 2 THEN 'G101'
+WHEN day = 'tuesday' AND period_no = 3 THEN 'F202'
+WHEN day = 'tuesday' AND period_no = 4 THEN 'F202'
+WHEN day = 'tuesday' AND period_no = 5 THEN 'E201'
+WHEN day = 'tuesday' AND period_no = 6 THEN 'E201'
+WHEN day = 'tuesday' AND period_no = 7 THEN 'E201'
+WHEN day = 'tuesday' AND period_no = 8 THEN 'E201'
+    END
+WHERE day = 'tuesday';
+
+
+
+UPDATE timetable
+SET room_no = CASE
+WHEN day = 'wednesday' AND period_no = 1 THEN 'G102'
+WHEN day = 'wednesday' AND period_no = 2 THEN 'G102'
+WHEN day = 'wednesday' AND period_no = 3 THEN 'G102'
+WHEN day = 'wednesday' AND period_no = 4 THEN 'G102'
+WHEN day = 'wednesday' AND period_no = 5 THEN 'G102'
+WHEN day = 'wednesday' AND period_no = 6 THEN 'G102'
+WHEN day = 'wednesday' AND period_no = 7 THEN 'G102'
+WHEN day = 'wednesday' AND period_no = 8 THEN 'SPORTS'
+    END
+WHERE day = 'wednesday';
+
+
+UPDATE timetable
+SET room_no = CASE
+WHEN Sno = 25  THEN 'E201'
+WHEN Sno = 26  THEN 'E201'
+WHEN Sno = 27  THEN 'G102'
+WHEN Sno = 28  THEN 'G102'
+WHEN Sno = 29  THEN 'G102'
+WHEN Sno = 30  THEN 'G102'
+WHEN Sno = 31  THEN 'G101'
+WHEN Sno = 32  THEN 'G101'
+    END
+WHERE Sno IN (25,26,27,28,29,30,31,32);
+
+
+UPDATE timetable
+SET room_no = CASE
+WHEN day = 'friday' AND period_no = 1 THEN 'G102'
+WHEN day = 'friday' AND period_no = 2 THEN 'G102'
+WHEN day = 'friday' AND period_no = 3 THEN 'F103'
+WHEN day = 'friday' AND period_no = 4 THEN 'F103'
+WHEN day = 'friday' AND period_no = 5 THEN 'G102'
+WHEN day = 'friday' AND period_no = 6 THEN 'G102'
+WHEN day = 'friday' AND period_no = 7 THEN 'J203'
+WHEN day = 'friday' AND period_no = 8 THEN 'J203'
+    END
+WHERE day = 'friday'
+
+
+
+UPDATE timetable
+SET room_no = CASE
+WHEN day = 'saturday' AND period_no = 1 THEN 'G101'
+WHEN day = 'saturday' AND period_no = 2 THEN 'G101'
+WHEN day = 'saturday' AND period_no = 3 THEN 'E201'
+WHEN day = 'saturday' AND period_no = 4 THEN 'E201'
+WHEN day = 'saturday' AND period_no = 5 THEN 'J203'
+WHEN day = 'saturday' AND period_no = 6 THEN 'J203'
+WHEN day = 'saturday' AND period_no = 7 THEN 'E204'
+WHEN day = 'saturday' AND period_no = 8 THEN 'E204'
+    END
+WHERE day = 'saturday';
