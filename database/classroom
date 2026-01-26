@@ -1,0 +1,13 @@
+// today i wanna going to add the classroom numbers 
+
+
+UPDATE classroom
+SET room_no =CASE Sno
+WHEN 1 THEN 'G102'
+WHEN 2 THEN 'I101'
+WHEN 3 THEN 'F202'
+WHEN 4 THEN 'F103'
+WHEN 5 THEN 'E201'
+WHEN 6 THEN 'E201'
+END
+WHERE Sno IN(1,2,3,4,5,6);
