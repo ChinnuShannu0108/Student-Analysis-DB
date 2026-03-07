@@ -1,0 +1,12 @@
+today i am going to note the sql queries for std info systm
+creation mech structure 
+  CREATE TABLE mech(
+Sno INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(50),
+student_id VARCHAR(10) UNIQUE,
+course VARCHAR(15),
+branch VARCHAR(10),
+section VARCHAR(1),
+place VARCHAR(25),
+mobile BIGINT
+);
