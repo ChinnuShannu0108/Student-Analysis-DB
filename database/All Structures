@@ -2,3 +2,10 @@ This file includes the structures that are useful for the quick understand for n
 
 1:
 INSERTION ROWS:
+INSERT INTO timetablec2()
+VALUES
+(),(),(),(),(),(),(),(),(),(),
+(),(),(),(),(),(),(),(),(),(),
+(),(),(),(),(),(),(),(),(),(),
+(),(),(),(),(),(),(),(),(),(),
+(),(),(),(),(),(),(),();          //it indicates no of rows without null
