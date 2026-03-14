@@ -1,0 +1,35 @@
+In this database contains of civil department students information
+
+Created and Inserted the 2 tables:
+  1. Student basic info(name,student_id,course,branch,mobile) inserted all values✅
+  2. Time table (day,subject,roo_no,time {start,end},period)  inserted all values✅
+DESCRIPTION:
+Sno	int	NO	PRI		auto_increment
+name	varchar(50)	YES			
+student_id	varchar(10)	YES	UNI		
+course	varchar(15)	YES			
+branch	varchar(10)	YES			
+section	varchar(1)	YES			
+place	varchar(25)	YES			
+mobile	bigint	YES
+
+
+Updation method i use here:
+Room Updation:
+
+UPDATE timetablec2
+SET room_no = CASE
+WHEN day = '--Day--' AND period = 1 THEN '--room_no--'
+WHEN day = '--Day--' AND period = 2 THEN '--room_no--'
+WHEN day = '--Day--' AND period = 3 THEN '--room_no--'
+WHEN day = '--Day--' AND period = 4 THEN '--room_no--'
+WHEN day = '--Day--' AND period = 5 THEN '--room_no--'
+WHEN day = '--Day--' AND period = 6 THEN '--room_no--'
+WHEN day = '--Day--' AND period = 7 THEN '--room_no--'
+WHEN day = '--Day--' AND period = 8 THEN '--room_no--'
+ElSE room_no
+END
+WHERE day = '--Day--' AND Sno >1;
+
+According to that i used sam method for subjects and other.
+
