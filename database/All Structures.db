@@ -11,7 +11,7 @@ VALUES
 (),(),(),(),(),(),(),();          //it indicates no of rows without null
 
 
-2:
+2:(updated the days for all days)
 UPDATE timetablec2
 SET day = CASE 
     WHEN Sno BETWEEN 1  AND 8  THEN 'Monday'
@@ -21,3 +21,27 @@ SET day = CASE
     WHEN Sno BETWEEN 33 AND 40 THEN 'Friday'
     WHEN Sno BETWEEN 41 AND 48 THEN 'Saturday'
 END
+
+3: (time insertion for 8 periods)
+UPDATE timetablec2
+SET start = CASE
+WHEN period = 1 THEN '09:00'
+WHEN period = 2 THEN '09:50'
+WHEN period = 3 THEN '11:00'
+WHEN period = 4 THEN '11:50'
+WHEN period = 5 THEN '13:30'
+WHEN period = 6 THEN '14:20'
+WHEN period = 7 THEN '15:10'
+WHEN period = 8 THEN '16:10'
+END,
+end = CASE
+WHEN period = 1 THEN '09:50'
+WHEN period = 2 THEN '10:40'
+WHEN period = 3 THEN '11:50'
+WHEN period = 4 THEN '12:40'
+WHEN period = 5 THEN '14:20'
+WHEN period = 6 THEN '15:10'
+WHEN period = 7 THEN '16:10'
+WHEN period = 8 THEN '17:00'
+END
+WHERE Sno > 0;
