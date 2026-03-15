@@ -9,3 +9,15 @@ VALUES
 (),(),(),(),(),(),(),(),(),(),
 (),(),(),(),(),(),(),(),(),(),
 (),(),(),(),(),(),(),();          //it indicates no of rows without null
+
+
+2:
+UPDATE timetablec2
+SET day = CASE 
+    WHEN Sno BETWEEN 1  AND 8  THEN 'Monday'
+    WHEN Sno BETWEEN 9  AND 16 THEN 'Tuesday'
+    WHEN Sno BETWEEN 17 AND 24 THEN 'Wednesday'
+    WHEN Sno BETWEEN 25 AND 32 THEN 'Thursday'
+    WHEN Sno BETWEEN 33 AND 40 THEN 'Friday'
+    WHEN Sno BETWEEN 41 AND 48 THEN 'Saturday'
+END
