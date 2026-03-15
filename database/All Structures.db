@@ -1,7 +1,6 @@
 This file includes the structures that are useful for the quick understand for next creation
 
-1:
-INSERTION ROWS:
+1:(Insertion of rows)
 INSERT INTO timetablec2()
 VALUES
 (),(),(),(),(),(),(),(),(),(),
@@ -45,3 +44,18 @@ WHEN period = 7 THEN '16:10'
 WHEN period = 8 THEN '17:00'
 END
 WHERE Sno > 0;
+
+4:(locating the room numbers for each dayand define period)
+UPDATE timetablec2
+SET room_no = CASE
+WHEN day = '--day--' AND period = 1 THEN '--roo_no--'
+WHEN day = '--day--' AND period = 2 THEN '--roo_no--'
+WHEN day = '--day--' AND period = 3 THEN '--roo_no--'
+WHEN day = '--day--' AND period = 4 THEN '--roo_no--'
+WHEN day = '--day--' AND period = 5 THEN '--roo_no--'
+WHEN day = '--day--' AND period = 6 THEN '--roo_no--'
+WHEN day = '--day--' AND period = 7 THEN '--roo_no--'
+WHEN day = '--day--' AND period = 8 THEN '--roo_no--'
+ElSE room_no
+END
+WHERE day = '--day--' AND Sno >1;
